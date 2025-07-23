@@ -1,0 +1,22 @@
+package com.photoroom.modularize
+
+import android.app.Application
+import org.koin.android.ext.koin.androidContext
+import org.koin.androix.startup.KoinStartup
+import org.koin.core.annotation.KoinExperimentalAPI
+import org.koin.dsl.KoinConfiguration
+import org.koin.ksp.generated.defaultModule
+
+@OptIn(KoinExperimentalAPI::class)
+class App : Application(), KoinStartup {
+    override fun onCreate() {
+        super.onCreate()
+
+    }
+
+    override fun onKoinStartup(): KoinConfiguration = KoinConfiguration {
+        androidContext(this@App)
+        allowOverride(false)
+        defaultModule()
+    }
+}

@@ -1,0 +1,4 @@
+package org.koin.ksp.generated
+
+public class _KSP_ComPhotoroomFeatureUserInternalDiUserModule
+public class _KSP_ComPhotoroomFeatureUserInternalUserViewModel
