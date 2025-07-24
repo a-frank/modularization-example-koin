@@ -9,7 +9,7 @@ import org.koin.androidx.compose.koinViewModel
 const val USER_GRAPH = "user"
 
 fun NavGraphBuilder.attachUserGraph() {
-    this.navigation("user-home", "user") {
+    navigation("user-home", "user") {
         composable("user-home") {
             UserScreen(viewModel = koinViewModel())
         }

@@ -9,11 +9,6 @@ import org.koin.ksp.generated.defaultModule
 
 @OptIn(KoinExperimentalAPI::class)
 class App : Application(), KoinStartup {
-    override fun onCreate() {
-        super.onCreate()
-
-    }
-
     override fun onKoinStartup(): KoinConfiguration = KoinConfiguration {
         androidContext(this@App)
         allowOverride(false)

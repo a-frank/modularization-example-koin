@@ -22,4 +22,8 @@ dependencyResolutionManagement {
 rootProject.name = "modularize"
 include(":app")
 include(":feature:user")
-include(":aggregator:user-plan")
+include(":design")
+include(":aggregator:ai-background")
+include(":data-provider:user")
+include(":data-provider:outpaint")
+include(":util:di")

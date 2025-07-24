@@ -3,12 +3,11 @@ import org.jetbrains.kotlin.gradle.dsl.JvmTarget
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    alias(libs.plugins.kotlin.compose)
     alias(libs.plugins.kotlin.ksp)
 }
 
 android {
-    namespace = "com.photoroom.feature.user"
+    namespace = "com.photoroom.dataprovider.user"
     compileSdk = libs.versions.targetSdkVersion.get().toInt()
 
     defaultConfig {
@@ -19,9 +18,6 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
-    }
-    buildFeatures {
-        compose = true
     }
 }
 
@@ -36,20 +32,9 @@ ksp {
 }
 
 dependencies {
-    implementation(project(":aggregator:ai-background"))
-    implementation(project(":design"))
     implementation(project(":util:di"))
 
-
-    implementation(platform(libs.androidx.compose.bom))
-    implementation(libs.androidx.ui)
-    implementation(libs.androidx.ui.graphics)
-    implementation(libs.androidx.ui.tooling.preview)
-    implementation(libs.androidx.material3)
-    implementation(libs.androidx.navigation)
     implementation(libs.androidx.startup)
-
-    implementation(libs.koin.androidx.compose)
 
     implementation(libs.koin.startup)
     implementation(libs.koin.annotations)

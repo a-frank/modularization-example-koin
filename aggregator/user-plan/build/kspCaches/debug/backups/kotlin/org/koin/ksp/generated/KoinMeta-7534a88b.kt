@@ -1,4 +1,0 @@
-package org.koin.ksp.generated
-
-public class _KSP_ComPhotoroomAggregatorUserplanInternalGetUserPanUseCaseImpl
-public fun _KSP_ComPhotoroomAggregatorUserplanGetUserPlanUseCase() : Unit = Unit

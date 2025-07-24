@@ -1,7 +1,7 @@
 package com.photoroom.feature.user.internal
 
-import com.photoroom.aggregator.userplan.model.UserPlan
+import android.graphics.Bitmap
 
 data class UserViewState(
-    val currentUserPlan: UserPlan
+    val generatedImage: Bitmap?
 )

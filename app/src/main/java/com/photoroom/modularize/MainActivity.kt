@@ -10,9 +10,9 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.ui.Modifier
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
+import com.photoroom.design.ModularizeTheme
 import com.photoroom.feature.user.USER_GRAPH
 import com.photoroom.feature.user.attachUserGraph
-import com.photoroom.modularize.ui.theme.ModularizeTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

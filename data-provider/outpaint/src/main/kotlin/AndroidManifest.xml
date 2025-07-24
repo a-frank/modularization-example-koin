@@ -9,7 +9,7 @@
             android:exported="false"
             tools:node="merge">
             <meta-data
-                android:name="com.photoroom.feature.user.internal.di.UserModuleInitializer"
+                android:name="com.photoroom.dataprovider.outpaint.di.OutpaintModuleInitializer"
                 android:value="androidx.startup" />
         </provider>
     </application>
